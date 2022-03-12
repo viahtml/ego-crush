@@ -1,0 +1,78 @@
+vthread4 {
+  position:relative;
+  display:grid;
+  grid-template-rows:  auto auto auto;
+  margin:30px auto;
+  width:300px;
+  background: linear-gradient(to top right,rgba(var(--col1),.3),rgba(var(--col2),.3),rgba(var(--col3),.3));
+  border:1px solid var(--border);
+  text-align:justify;
+  overflow:hidden;
+}
+
+vthread4 top {
+  background:var(--bg4);
+  height:50px;
+  border-bottom:1px solid var(--border);
+}
+
+vthread4 top img {
+  display:block;
+  margin:10px auto;
+  width:80px;
+  height:80px;
+  padding:10px;
+  background:var(--bg4);
+}
+
+vthread4 top img.circle {
+  border-radius: 100%;
+}
+
+vthread4 .content {
+  padding:30px;
+  margin-top:50px;
+}
+
+vthread4 b {
+  font-family:var(--mono);
+  background:var(--bg4);
+  padding:3px;
+  color:rgba(var(--col2))!important;
+}
+
+vthread4 i {
+  background:var(--bg4);
+  padding:3px;
+  color:rgba(var(--col1))!important;
+}
+
+vthread4 u {
+  background:var(--bg4);
+  padding:3px;
+  font:15px var(--mono);
+  color:rgba(var(--col2))!important;
+}
+
+vthread4 a {
+  background:var(--bg4);
+  padding:3px;
+  font:15px var(--mono);
+  color:rgba(var(--col3))!important;
+}
+
+vthread4 tag {
+  display:block;
+  padding:10px;
+  background:var(--bg4);
+  text-align:center;
+  border-top:1px solid var(--border);
+}
+
+vthread4 tag a::before {
+  content:'[ ';
+}
+
+vthread4 tag a::after {
+  content:' ]';
+}
