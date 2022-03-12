@@ -1,0 +1,87 @@
+vthread2 {
+  position:relative;
+  display:grid;
+  grid-template-rows:  auto auto auto;
+  margin:30px auto;
+  width:300px;
+  background: linear-gradient(to top right,rgba(var(--col1),.3),rgba(var(--col2),.3),rgba(var(--col3),.3));
+  border:1px solid var(--border);
+  text-align:justify;
+  overflow:hidden;
+}
+
+vthread2 top {
+  display:flex;
+  flex-flow:row;
+  justify-content: center;
+  align-items: center;
+  padding:20px;
+  background:rgba(var(--white2),0.5);
+  border-bottom:1px solid var(--border);
+}
+
+vthread2 top img {
+  margin:10px;
+  padding:10px;
+  background:var(--bg4);
+  border:1px solid var(--border);
+}
+
+vthread2 top img.rectangle {
+  width:235px;
+}
+
+vthread2 top img.square {
+  width:110px;
+  height:110px;
+}
+
+vthread2 top img.circle {
+  width:110px;
+  height:110px;
+  border-radius:100%;
+}
+
+vthread2 .content {
+  margin:40px;
+  padding:20px;
+  background:var(--bg4);
+  border:1px solid var(--border);
+}
+
+vthread2 b {
+  font-family:var(--mono);
+  background: linear-gradient(to right,rgba(var(--col1),.7),rgba(var(--col2),.7),rgba(var(--col3),.7));
+  -webkit-background-clip: text;
+  color:var(--clear)!important;
+}
+
+vthread2 i {
+  color:rgba(var(--col1))!important;
+}
+
+vthread2 u {
+  font:15px var(--mono);
+  color:rgba(var(--col2))!important;
+}
+
+vthread2 a {
+  font:15px var(--mono);
+  color:rgba(var(--col3))!important;
+}
+
+vthread2 tag {
+  display:block;
+  padding:10px;
+  background:var(--bg4);
+  text-align:center;
+  border-top:1px solid var(--border);
+}
+
+vthread2 tag a::before {
+  content:'[ ';
+}
+
+vthread2 tag a::after {
+  content:' ]';
+}
