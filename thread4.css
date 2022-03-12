@@ -13,6 +13,7 @@ vthread4 {
 vthread4 top {
   background:var(--bg4);
   height:50px;
+  margin-bottom:30px;
   border-bottom:1px solid var(--border);
 }
 
@@ -31,7 +32,6 @@ vthread4 top img.circle {
 
 vthread4 .content {
   padding:30px;
-  margin-top:50px;
 }
 
 vthread4 b {
