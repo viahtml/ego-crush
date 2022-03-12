@@ -1,0 +1,81 @@
+vthread1 {
+  position:relative;
+  display:grid;
+  grid-template-areas:
+    "image lyrics"
+    "content content"
+    "tag tag";
+  grid-template-rows: 120px auto 50px;
+  grid-template-columns: 120px auto;
+  margin:30px auto;
+  width:450px;
+  background:var(--bg4);
+  border:1px solid var(--border);
+  text-align:justify;
+}
+
+vthread1 img {
+  grid-area:image;
+  width:120px;
+  height:120px;
+  padding:15px;
+  background:var(--bck9);
+  border-right:1px solid var(--border);
+}
+
+vthread1 lyrics {
+  grid-area:lyrics;
+  height:120px;
+  display:block;
+  padding:20px 20px 0;
+  text-align:right;
+  font:400 20px var(--mono)
+}
+
+vthread1 .content {
+  grid-area: content;
+  padding:30px;
+  font:13px var(--sans);
+  line-height: 150%;
+  background:var(--bg3);
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+}
+
+vthread1 b {
+  font-family:var(--mono);
+  background: linear-gradient(to right,rgba(var(--col1),.7),rgba(var(--col2),.7),rgba(var(--col3),.7));
+  -webkit-background-clip: text;
+  color:var(--clear)!important;
+}
+
+vthread1 i {
+  color:rgba(var(--col1));
+}
+
+vthread1 u {
+  font:15px var(--mono);
+  color:rgba(var(--col2));
+}
+
+vthread1 a {
+  font:15px var(--mono);
+  color:rgba(var(--col3));
+}
+
+vthread1 tag {
+  grid-area:tag;
+  display:flex;
+  flex-flow:row;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 20px;
+  font-size:15px;
+}
+
+vthread1 tag span a {
+  font:italic 15px var(--mono);
+  background: linear-gradient(to right,rgba(var(--col1),.7),rgba(var(--col2),.7),rgba(var(--col3),.7));
+  -webkit-background-clip: text;
+  color:var(--clear)!important;
+}
